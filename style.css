@@ -1,0 +1,55 @@
+/* GENERAL */
+* { box-sizing: border-box; margin:0; padding:0; font-family:'Poppins',sans-serif;}
+body { background:#fefefe; color:#222; line-height:1.6;}
+
+/* HEADER / HERO */
+header { background: linear-gradient(135deg,#ffb347,#ffcc33); color:#fff; text-align:center; padding:80px 20px;}
+header h1 { font-size:3rem; margin-bottom:10px; animation:fadeInDown 1s ease forwards;}
+header p { font-size:1.3rem; margin-bottom:20px; animation:fadeInUp 1s ease forwards;}
+.btn { display:inline-block; background:#fff; color:#ff7f50; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:600; transition:all 0.3s ease;}
+.btn:hover { transform:scale(1.05); background:#ffe5b4;}
+
+/* SECTIONS */
+section { padding:60px 20px; text-align:center;}
+section h2 { font-size:2rem; margin-bottom:20px; position:relative;}
+section h2::after { content:''; display:block; width:80px; height:3px; background:#ff7f50; margin:10px auto 0 auto; border-radius:2px;}
+
+/* SERVICES CARDS */
+.services .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;}
+.services .card { background:#ffefc2; padding:40px 20px; width:220px; border-radius:15px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer;}
+.services .card:hover { transform:translateY(-10px); box-shadow:0 15px 25px rgba(0,0,0,0.2); }
+
+/* PORTFOLIO PLACEHOLDERS */
+.portfolio .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; margin-top:30px;}
+.portfolio .grid .card { background:#fff; border-radius:15px; overflow:hidden; padding:50px 10px; font-weight:600; transition:transform 0.3s, box-shadow 0.3s; cursor:default;}
+.portfolio .grid .card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.portfolio .grid .placeholder { background:#ddd; color:#555; display:flex; align-items:center; justify-content:center; height:200px; }
+
+/* SOCIALS */
+.socials { padding:40px 20px; background:#fef2e0; }
+.socials .social-icons { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin-top:20px;}
+.socials .icon { display:inline-block; padding:10px 15px; background:#fff; border-radius:10px; text-decoration:none; color:#ff7f50; font-weight:600; transition:all 0.3s;}
+.socials .icon:hover { background:#ff7f50; color:#fff; transform:scale(1.1); }
+
+/* CONTACT */
+.contact p { margin:10px 0; }
+
+/* FOOTER */
+footer { background:#222; color:#fff; text-align:center; padding:20px; font-size:0.9rem; }
+
+/* ANIMATIONS */
+@keyframes fadeInDown {0% {opacity:0; transform:translateY(-50px);}100% {opacity:1; transform:translateY(0);}}
+@keyframes fadeInUp {0% {opacity:0; transform:translateY(50px);}100% {opacity:1; transform:translateY(0);}}
+
+/* RESPONSIVE */
+@media(max-width:768px){.services .cards{flex-direction:column; align-items:center;}}
+
+#instagramBtn {
+  cursor: pointer;
+}
+
+#facebookBtn {
+  cursor: pointer;
+}
+
+
